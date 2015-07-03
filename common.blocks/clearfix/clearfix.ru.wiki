@@ -1,9 +1,16 @@
-### Свойства и методы объекта
+Для использования блока необходимо подмешать его к нужному html-элементу, например:
+%%hl xml
+    <div style="background: #ada;">
+        top
+    </div>
 
-| Имя | Тип | Описание |
-| --- | --- | -------- |
-| <a href="#fields-ua">ua</a> | <code>{String}</code> | Значение HTTP-заголовка юзер-агента. |
-| <a href="#fields-ios">ios</a> | <code>{String}</code>&#124;<code>{undefined}</code> | Версия мобильной платформы iOS. |
-| <a href="#fields-android">android</a> | <code>{String}</code>&#124;<code>{undefined}</code> | Версия мобильной платформы Android. |
-| <a href="#fields-bada">bada</a> | <code>{String}</code>&#124;<code>{undefined}</code> | Версия мобильной платформы Bada OS. |
-| <a href="#fields-wp">wp</a> | <code>{String}</code>&#124;<code>{undefined}</code> | Версия мобильной платформы Windows Phone. |
+    <div class="clearfix" style="background: #eda;">
+        <div style="float: left; height: 100px;">item1</div>
+        <div style="float: left; height: 100px;">item2</div>
+        <div style="float: left; height: 100px;">item3</div>
+    </div>
+
+    <div style="background: #ada;">
+        bottom
+    </div>
+%%
